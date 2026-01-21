@@ -237,10 +237,10 @@ nav .menu a{
 .mobile-friendly p{
     align-self: baseline
 }
-#featured-episodes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.episodes-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 120px 0px 120px;
 }
 .episodes-container h1{
     text-align: center;
@@ -251,12 +251,17 @@ nav .menu a{
 }
 .card-container{
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 .card-container .card-box{
-   max-width: 380px;
+   width: 30%;
    /* height: 226px; */
    padding: 24px;
+   text-align: left;
+}
+
+.card-container .card-box iframe{
+    width: 100%;
 }
 .card-box h3{
    font-size: 1.5rem;
@@ -441,7 +446,7 @@ nav .menu a{
         align-items: center;
     }
     .card-box{
-        width: 90%;
+        width: 100% !important;
     }
     .meet-container{
         margin: 40px 20px;
